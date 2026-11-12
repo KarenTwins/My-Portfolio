@@ -1,6 +1,7 @@
-node_modules
-package-lock.json
+**/node_modules/
+**/build/
+**/.env
+**/.env.*
+!**/.env.example
+portfolio-website/public/
 .DS_Store
-*.psd
-
-public/
