@@ -1,0 +1,5 @@
+[build]
+  # Netlify installs dependencies automatically before running the build
+  # command, so `npm ci` (which requires a committed package-lock.json) is not needed.
+  command = "npm run build"
+  publish = "public"
