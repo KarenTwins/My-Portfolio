@@ -29,13 +29,13 @@ const VerticalNavbar: React.FC<VerticalNavbarProps> = (props) => {
     }, [location.pathname]);
 
     return !isHome ? (
-        <div style={styles.navbar}>
-            <div style={styles.header}>
+        <div className="showcase-navbar" style={styles.navbar}>
+            <div className="showcase-navbar-header" style={styles.header}>
                 <h1 style={styles.headerText}>Brilliantsyah</h1>
                 <h1 style={styles.headerText}>El</h1>
                 <h3 style={styles.headerShowcase}>Portfolio</h3>
             </div>
-            <div style={styles.links}>
+            <div className="showcase-navbar-links" style={styles.links}>
                 <Link containerStyle={styles.link} to="" text="HOME" />
                 <Link containerStyle={styles.link} to="about" text="ABOUT" />
                 <Link
@@ -80,8 +80,12 @@ const VerticalNavbar: React.FC<VerticalNavbarProps> = (props) => {
                     text="CONTACT"
                 />
             </div>
-            <div style={styles.spacer} />
-            <div style={styles.forHireContainer} onMouseDown={goToContact}>
+            <div className="showcase-navbar-spacer" style={styles.spacer} />
+            <div
+                className="showcase-navbar-hire"
+                style={styles.forHireContainer}
+                onMouseDown={goToContact}
+            >
                 {/* <img src={forHire} style={styles.image} alt="" /> */}
             </div>
         </div>

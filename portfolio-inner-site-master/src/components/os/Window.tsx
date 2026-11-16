@@ -20,6 +20,7 @@ export interface WindowProps {
     rainbow?: boolean;
     windowBarColor?: string;
     windowBarIcon?: IconName;
+    className?: string;
     onWidthChange?: (width: number) => void;
     onHeightChange?: (height: number) => void;
 }
@@ -192,6 +193,7 @@ const Window: React.FC<WindowProps> = (props) => {
     return (
         <div onMouseDown={onWindowInteract} style={styles.container}>
             <div
+                className={props.className}
                 style={Object.assign({}, styles.window, {
                     width,
                     height,

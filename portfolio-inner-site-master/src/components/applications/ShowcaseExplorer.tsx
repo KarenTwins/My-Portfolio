@@ -25,13 +25,14 @@ const ShowcaseExplorer: React.FC<ShowcaseExplorerProps> = (props) => {
             height={initHeight}
             windowTitle="Brilliantsyah El - Portfolio"
             windowBarIcon="brilliantsyahIcon"
+            className="showcase-window"
             closeWindow={props.onClose}
             onInteract={props.onInteract}
             minimizeWindow={props.onMinimize}
             bottomLeftText={'Brilliantsyah'}
         >
             <Router>
-                <div className="site-page">
+                <div className="site-page showcase-page">
                     <VerticalNavbar />
                     <Routes>
                         <Route path="/" element={<Home />} />
