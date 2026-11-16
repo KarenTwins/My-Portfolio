@@ -106,7 +106,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = () => {
                     <a
                         rel="noreferrer"
                         target="_blank"
-                        // href="https://henryheffernan.vercel.app/"
+                        href="https://bryaant2d.netlify.app/"
                     >
                         here
                     </a>{' '}
